@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+  --primari : #5350c4;
+  --secondary: #f2f2ff;
+}
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  background-color: #fffafa;
+} */
+
+.chat-header{
+  background: #4237ca;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  border-radius: 8px 8px 0 0;
+  padding: 12px 18px;
+  margin-bottom: 10px;
+
+  .header-info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    svg{
+      width: 35px;
+      height: 35px;
+      padding: 6px;
+      fill: #4336ca;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: #fff; 
+    }
+    h2{
+      color: #fff;
+      font-size: 1.31rem;
+      font-weight: 600;
+    }
+  }
+  button{
+    border: none;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #6260da;
+    font-size: 2rem;
+    padding-top: 2px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+    background: #3e3cab;
+    }
+  }
+}
+  
+
+.loaderbox{
+  .loader {
+    display: inline-block;
+  }
+  
+  .loader > div {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px #5250c3;
+    background: var(--primari);
+    float: left;
+    margin: 5px;
+    transform: scale(1.2);
+  }
+  
+  .loader > div:nth-child(1) {
+    animation: anm-BL-53-move1 1s infinite linear;
+  }
+  
+  .loader > div:nth-child(2) {
+    animation: anm-BL-53-move2 1s infinite linear;
+    animation-delay: 0.2s;
+  }
+  
+  .loader > div:nth-child(3) {
+    animation: anm-BL-53-move3 1s infinite linear;
+    animation-delay: 0.3s;
+  }
+  }
+  
+  @keyframes anm-BL-53-move1 {
+    50% {
+      background: var(--secondary);
+      transform: scale(.8);
+    }
+  }
+  
+  @keyframes anm-BL-53-move2 {
+    50% {
+      background: var(--secondary);
+      transform: scale(.8);
+    }
+  }
+  
+  @keyframes anm-BL-53-move3 {
+    50% {
+      background: var(--secondary);
+      transform: scale(.8);
+    }
+  }
+  
+  @keyframes anm-BL-53-move4 {
+    50% {
+      background: var(--secondary);
+      transform: scale(.8);
+    }
+  }
+  
+  @keyframes anm-BL-53-move5 {
+    50% {
+      background: var(--secondary);
+      transform: scale(.8);
+    }
+  }
+    
