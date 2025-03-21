@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Eye, EyeOff, Users, Loader2, KeyRound, Mail, CircleUserRound, UserRoundPlus, Turtle } from "lucide-react";
+import { Eye, EyeOff, Users, Loader2, Lock, Mail, CircleUserRound, UserRoundPlus, Turtle } from "lucide-react";
 import { Link } from "react-router-dom";
 import AuthImagePattern from "../components/AuthImagePattern.jsx";
 import { useAuthStore } from "../stores/useAuthStore.js";
@@ -61,7 +61,7 @@ function Signup() {
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <Users className="size-5 text-base-content/40" />
+                  <Users className="size-5 text-base-content/40 z-10" />
                 </div>
                 <input
                   type="text"
@@ -80,7 +80,7 @@ function Signup() {
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <Mail className="size-5 text-base-content/40" />
+                  <Mail className="size-5 text-base-content/40 z-10" />
                 </div>
                 <input
                   type="email"
@@ -99,7 +99,7 @@ function Signup() {
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <KeyRound className="size-5 text-base-content/40" />
+                  <Lock className="size-5 text-base-content/40 z-10" />
                 </div>
                 <input
                   type={showPassword ? "text" : "password"}

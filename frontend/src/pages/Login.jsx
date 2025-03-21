@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Eye, EyeOff, Loader2, Lock, Mail, CircleUserRound, LogIn } from "lucide-react";
+import { Eye, EyeOff, Loader2, KeyRound, Mail, CircleUserRound, LogIn } from "lucide-react";
 import {Link} from 'react-router-dom';
 import AuthImagePattern from "../components/AuthImagePattern";
 import { useAuthStore } from "../stores/useAuthStore";
@@ -42,7 +42,7 @@ const Login = () => {
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <Mail className="h-5 w-5 text-base-content/40" />
+                  <Mail className="h-5 w-5 text-base-content/40 z-10" />
                 </div>
                 <input
                   type="email"
@@ -62,7 +62,7 @@ const Login = () => {
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <Lock className="h-5 w-5 text-base-content/40" />
+                  <KeyRound className="h-5 w-5 text-base-content/40 z-10" />
                 </div>
                 <input
                   type={showPassword ? "text" : "password"}
