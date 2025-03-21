@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Eye, EyeOff, Users, Loader2, Lock, Mail, MessageSquare, UserRoundPlus, Turtle } from "lucide-react";
+import { Eye, EyeOff, Users, Loader2, KeyRound, Mail, CircleUserRound, UserRoundPlus, Turtle } from "lucide-react";
 import { Link } from "react-router-dom";
 import AuthImagePattern from "../components/AuthImagePattern.jsx";
 import { useAuthStore } from "../stores/useAuthStore.js";
@@ -46,7 +46,7 @@ function Signup() {
             <div className="flex flex-col items-center gap-2 group">
               <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center 
               group-hover:bg-primary/20 transition-colors">
-                <MessageSquare className="size-6 text-primary" />
+                <CircleUserRound className="size-24 text-primary" />
               </div>
               <h1 className="text-2xl font-bold mt-2">Create Account</h1>
               <p className="text-base-content/60">Get started with your free account</p>
@@ -99,7 +99,7 @@ function Signup() {
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <Lock className="size-5 text-base-content/40" />
+                  <KeyRound className="size-5 text-base-content/40" />
                 </div>
                 <input
                   type={showPassword ? "text" : "password"}
@@ -201,7 +201,7 @@ function Signup() {
       {/* Right side */}
       <AuthImagePattern
         title="Join our community"
-        subtitle="Connect with friends, share moments, and stay in touch with your loved ones."
+        subtitle="Empowering women through awareness, education, and health resources for a brighter future."
       />
     </div>
   );
