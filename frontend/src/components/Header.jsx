@@ -77,7 +77,8 @@ const Header = () => {
             name="Resources"
           />
           <Navlink route="/chat-bot" name="Chat Bot" />
-          <Navlink route="/story-blog" name="Story Blog" />
+          <Navlink route="/story-blog" name="Story" />
+          <Navlink route="/blog" name="Blog" />
           {/* <Navlink route="about" name="About Me" /> */}
           {authUser ? (
                 <Navlink route="/profile" name="Profile" />
@@ -137,7 +138,10 @@ const Header = () => {
               <Navlink route="/chat-bot" name="Chat Bot" />
             </div>
             <div onClick={() => setIsMenuOpen(false)}>
-              <Navlink route="/story-blog" name="Story Blog" func="true" />
+              <Navlink route="/story-blog" name="Story" func="true" />
+            </div>
+            <div onClick={() => setIsMenuOpen(false)}>
+              <Navlink route="/blog" name="Blog" func="true" />
             </div>
             {/* <div onClick={() => setIsMenuOpen(false)}>
               <Navlink route="/about" name="About Me" />
