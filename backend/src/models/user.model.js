@@ -23,14 +23,17 @@ const UserSchema = new mongoose.Schema(
     gender : {
       type : String,
       enum : ["Male", "Female", "Other"],
-      default : "Other"
+      required: true,
     },
     age : {
       type : Number,
       min : 6,
+      required: true,
     },
-    savedPost : {
-      Array : []
+    savedPost: {
+      type: [mongoose.Schema.Types.ObjectId], 
+      ref: "Post", 
+      default: [],
     }
   },
   {

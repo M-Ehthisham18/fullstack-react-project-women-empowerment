@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Share.css";
 import { ImagePlus, X } from "lucide-react";
 import avatar from "../assets/avatar.png";
@@ -48,16 +48,17 @@ const Share = () => {
 
     const res = await createPost(newPost);
     
-      if (res) {
-        setTimeout(()=> {
-        window.location.reload()
-        },1500)
-      }
+      // if (res) {
+      //   setTimeout(()=> {
+      //   window.location.reload()
+      //   },1500)
+      // }
 
     // Reset form
     desc.current.value = "";
     setSelectedImg(null);
   };
+  
 
   return (
     <div className="share">
@@ -75,7 +76,7 @@ const Share = () => {
               e.target.style.height = "auto"; // Reset height
               e.target.style.height = `${e.target.scrollHeight}px`; // Set new height
             }}
-            placeholder={`What's in your mind ${authUser?.fullName}?`}
+            placeholder={`What's in your mind ${authUser?.fullName || ""}?`}
           ></textarea>
 
           {selectedImg && (
